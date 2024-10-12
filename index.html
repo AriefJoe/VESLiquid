@@ -34,7 +34,7 @@
 </head>
 <body>
     <!--IMAGETARGETS-->
-		<imagetarget id='qr-code-biometrics' src='targets/qr-code-biometrics.png'></imagetarget>
+		<imagetarget id='VES Logo-01' src='targets/VES Logo-01.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -76,7 +76,7 @@
         });;
         
     </script>
-    <script src="Build/VES Project.loader.js"></script>
+    <script src="Build/VESLiquid.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -88,9 +88,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/VES Project.data.unityweb",
-                    frameworkUrl: "Build/VES Project.framework.js.unityweb",
-                    codeUrl: "Build/VES Project.wasm.unityweb",
+                    dataUrl: "Build/VESLiquid.data.unityweb",
+                    frameworkUrl: "Build/VESLiquid.framework.js.unityweb",
+                    codeUrl: "Build/VESLiquid.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "QuantumXR",
                     productName: "Biometric",
